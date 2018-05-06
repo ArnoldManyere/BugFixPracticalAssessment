@@ -4,7 +4,7 @@ package com.econetwireless.utils.messages;
  * Created by tnyamakura on 17/3/2017.
  */
 public class AirtimeTopupResponse {
-    private String responseCode;
+    private String responseCode="200";
     private String narrative;
     private String msisdn;
     private double balance;
