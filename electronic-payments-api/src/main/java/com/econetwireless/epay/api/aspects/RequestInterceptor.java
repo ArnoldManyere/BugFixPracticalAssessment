@@ -67,6 +67,7 @@ public class RequestInterceptor {
             LOGGER.info("IN Enquire Airtime Balance :: Partner Code : {}, Mobile Number : {}",
                     partnerCode, msisdn);
             airtimeBalanceResponse = checkingMissingFields(partnerCode, msisdn);
+            System.out.println(partnerCode);
             if(StringUtils.isNotEmpty(airtimeBalanceResponse.getResponseCode())) {
                 return airtimeBalanceResponse;
             }
