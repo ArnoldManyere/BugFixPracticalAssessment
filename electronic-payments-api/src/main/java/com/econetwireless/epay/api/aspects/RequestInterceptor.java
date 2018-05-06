@@ -49,6 +49,7 @@ public class RequestInterceptor {
             transactionsResponse.setResponseCode(ee.getResponseCode().getCode());
         }catch (Throwable throwable) {
             LOGGER.error("Error on get transactions by partner code : ", throwable);
+            System.out.println("heeeeey");
             transactionsResponse.setNarrative("Balance enquiry request failed, please try again later");
             transactionsResponse.setResponseCode(ResponseCode.FAILED.getCode());
 
